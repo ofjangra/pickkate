@@ -1,9 +1,19 @@
 import React from 'react'
-
+import { Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import Colors from './Colors';
+import Fonts from './Fonts';
+import FontPairs from './FontPairs';
 const App = () => {
   return (
       <>
-          <h1>Hello JS</h1>
+      <Routes>
+          <Route path='/' element = {<Home/>}></Route>
+          <Route path='/colors' element = {<Colors/>}></Route>
+          <Route path='/fonts' element = {<Fonts/>}></Route>
+          <Route path='/fontpairs' element = {<FontPairs/>}></Route>
+
+          </Routes>
       </>
   )
 }

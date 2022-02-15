@@ -8,10 +8,12 @@ const App = () => {
   return (
       <>
       <Routes>
-          <Route path='/' element = {<Home/>}></Route>
-          <Route path='/colors' element = {<Colors/>}></Route>
-          <Route path='/fonts' element = {<Fonts/>}></Route>
-          <Route path='/fontpairs' element = {<FontPairs/>}></Route>
+          <Route path='/' element = {<Home/>}>
+
+          </Route>
+          <Route exact path = '/colors' element = {<Colors/>}></Route>
+          <Route path = '/fonts' element = {<Fonts/>}></Route>
+          <Route path = '/fontpairs' element = {<FontPairs/>}></Route>
 
           </Routes>
       </>

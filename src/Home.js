@@ -1,40 +1,45 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import {Link} from "react-router-dom";
 
 const Home = () => {
+
+  const [minHeight, setMinHeight] = useState();
+
+  useEffect(() =>{
+    let deviceHeight = window.innerHeight;
+    setMinHeight(deviceHeight)
+  })
   return (
     <>
-      <div className="homeMain">
-        <header className="homeHeader">
-          {/* <h1>Pickkate</h1> */}
+      <div className="homeMain" style ={{minHeight: minHeight < 620 ? 620 : minHeight}}>
+        <div className="sideHeader">
           <p>
-            Explore a unique collecton of color palettes
-            and fonts handpicked specially for web designers.
+            On pickate we have a unique collection of color palettes and fonts handpicked for web-designers.
           </p>
-        </header>
-
-        <nav className="navbar">
-          <div className="navlinks">
-            <Link to="/colors" className="link">
-            <div className="homeNavlink">
-            <img src = "./img/bg1.jpg" alt = "colors"/>
-            <strong>Color Pellates</strong>
-            </div>
+        </div>
+        <nav className="homeSideNav">
+          <h2>Explore</h2>
+          <ul>
+            <Link to = '/colors' className="link"> 
+            <li>
+              Colors
+            </li>
             </Link>
-            <Link to="/fonts" className="link">
-            <div className="homeNavlink">
-            <img src = "./img/bg2.jpg" alt = "colors"/>
-            <strong>Fonts</strong>
-            </div>
+            <Link to = "/fonts" className="link">
+            <li>
+              Fonts
+            </li>
             </Link>
-            <Link to="/fontpairs" className="link">
-            <div className="homeNavlink">
-            <img src = "./img/bg3.jpg" alt = "colors"/>
-            <strong>Font Pairs</strong>
-            </div>
+            <Link to = "/fontpairs" className="link">
+            <li>
+              Font Pairs
+            </li>
             </Link>
-          </div>
+          </ul>
         </nav>
+        <div className="aboutDiv">
+          <p>about</p>
+        </div>
       </div>
     </>
   );

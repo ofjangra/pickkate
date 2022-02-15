@@ -1,0 +1,72 @@
+.colorsMain{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.clrCategories{
+    height: 8vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    font-family: dmSansRegular;
+}
+.pelatteContainer{
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.filterMenu{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: dmSansRegular;
+}
+.pelattes{
+    height: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+    /* background-color: aqua; */
+}
+.filterMenu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 80%;
+    width: 100%;
+    list-style: none;
+}
+.pelatte{
+    /* height: auto; */
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    /* background-color: blue; */
+}
+.pelatte div{
+    height: 40px;
+    width: 200px;
+    margin: 1px 0 1px 0;
+    border-radius: 2px;
+}

@@ -5,11 +5,11 @@
 }
 @font-face {
     font-family: dmSansRegular;
-    src: url('./fonts/DMSans/DMSans-Regular.ttf');
+    src: url('./fonts/DMSans-Regular.ttf');
 }
 @font-face {
     font-family: angelicaProDisplay;
-    src: url('./fonts/angelica-pro-display/Anglecia-Pro-Display.otf');
+    src: url('./fonts/Anglecia-Pro-Display.otf');
 }
 .homeMain{
     width: 100%;
